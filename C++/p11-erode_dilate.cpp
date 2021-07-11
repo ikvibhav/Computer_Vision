@@ -59,6 +59,9 @@ int main(){
     imshow(window_3x3_kernel_dilate, image_3x3_kernel_dilate);
     imshow(window_5x5_kernel_dilate, image_5x5_kernel_dilate);
 
+    imwrite("images/image_5x5_kernel_erode.jpg", image_5x5_kernel_erode);
+    imwrite("images/image_5x5_kernel_dilate.jpg", image_5x5_kernel_dilate);
+
     waitKey(0);
 
     destroyAllWindows();
