@@ -20,7 +20,7 @@ g++ hello_world.cpp -o hello_world `pkg-config --cflags --libs opencv`
 ### DataTypes of Arrays
 - A given image can be assumed to be multiple channels of 2D matrices, with each element as a pixel. Eg, CV_8UC3
 
-![Channels_pixels_matrices](image_for_tut/channels_matrices.png)
+![Channels_pixels_matrices](images_for_tut/channels_matrices.png)
 
 - Need to be read as first tuple {54,0,34}, second tuple {58,78,185} etc. 
 - 1 upto 512 channels possible
@@ -46,20 +46,20 @@ g++ hello_world.cpp -o hello_world `pkg-config --cflags --libs opencv`
     - Image processing to enhance the contrast of an image by equalizing the intensity distribution. It will make a dark image (underexposed) less dark and a bright image (overexposed) less bright. 
     - Eg, In below figure the histogram equalization for the distribution of an image of depth 2 (possible values of {0,1,2,3}) is performed.
     
-![histogram_before_equal](image_for_tut/histogram_before_equal.png)
+![histogram_before_equal](images_for_tut/histogram_before_equal.png)
 
-![histogram_after_equal](image_for_tut/histogram_after_equal.png)
+![histogram_after_equal](images_for_tut/histogram_after_equal.png)
 
 ### Image Filtering
 - Kernel -
     - A matrix with an odd height and odd width
     - 3x3 Normalized Box Filter, Homogeneous Smoothing (blurring):-
 
-    ![3x3_Normalized_box_filter](image_for_tut/3x3_Normalized_box_filter.png)
+    ![3x3_Normalized_box_filter](images_for_tut/3x3_Normalized_box_filter.png)
     
     - 3x3 Normalized Box Filter, Homogeneous Smoothing (blurring):-
 
-    ![3x3_Gaussian_Kernel](image_for_tut/3x3_Gaussian_Kernel.png)
+    ![3x3_Gaussian_Kernel](images_for_tut/3x3_Gaussian_Kernel.png)
 
 - Smoothing/blurring is an image processing technique to remove imperfections and improve the image.
 - Choice of kernel size is important. 
